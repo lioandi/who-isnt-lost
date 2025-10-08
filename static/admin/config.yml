@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: lioandi/who-isnt-lost
+  branch: main
+  auth_type: implicit
+  client_id: gh_oauth_client_id_example
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
