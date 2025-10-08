@@ -1,20 +1,20 @@
 backend:
   name: github
   repo: lioandi/who-isnt-lost
-  branch: main
-  auth_type: implicit
-  client_id: gh_oauth_client_id_example
+  branch: gh-pages
+  base_url: https://auth.netlify.com
+  auth_endpoint: /auth
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "posts"
-    label: "Posts"
+    label: "文章"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "正文", name: "body", widget: "markdown" }
