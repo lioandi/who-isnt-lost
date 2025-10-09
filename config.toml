@@ -1,0 +1,9 @@
+baseURL = "https://lioandi.github.io/who-isnt-lost/"
+languageCode = "zh-cn"
+title = "Who Isn't Lost"
+theme = "ananke"
+paginate = 10
+
+[params]
+  author = "lioandi"
+  description = "A Hugo site deployed on Netlify"
