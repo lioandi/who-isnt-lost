@@ -1,0 +1,16 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify -b https://lioandi.github.io/who-isnt-lost/"
+
+[build.environment]
+  HUGO_VERSION = "0.150.1"
+  HUGO_ENV = "production"
+
+[context.production.environment]
+  HUGO_VERSION = "0.150.1"
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.150.1"
+  HUGO_ENV = "production"
+
